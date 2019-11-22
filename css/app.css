@@ -1,0 +1,200 @@
+html {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100%;
+  color: white;
+  background: #9796f0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    #fbc7d4,
+    #9796f0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    #fbc7d4,
+    #9796f0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 30px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+.section-intro {
+  font-size: 30px;
+}
+
+.section-intro > p > span {
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+}
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+}
+
+.arrows path {
+  stroke: rgba(255, 255, 255, 0.7);
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+}
+
+.arrows path.a2 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+}
+
+.social {
+  width: 100%;
+  text-align: center;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+}
+
+.social-link {
+  fill: white;
+}
+
+.social-link:hover {
+  fill: #8dd6f9;
+}
+
+.section-works {
+  text-align: left;
+}
+
+.section-works > div {
+  max-width: 600px;
+}
+
+.company-logos {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.company-logos-linkedin {
+  background-color: #0077b5;
+}
+
+.company-logos-uber {
+  background-color: #000000;
+}
+
+.company-logos-sony {
+  background-color: #003791;
+}
+
+.work-header {
+  display: flex;
+  align-items: center;
+}
+.work-header > span {
+  margin-right: 10px;
+  margin-left: -118px;
+}
+
+.work-header > span {
+  font-size: 20px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media only screen and (max-width: 865px) {
+  .work-header > span {
+    display: none;
+  }
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0px;
+  margin-bottom: 16px;
+}
+
+dd > span {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.section-art {
+}
+
+.section-art-container {
+  width: 800px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+}
