@@ -24,7 +24,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   padding: 30px;
   text-align: center;
 }
@@ -189,12 +189,28 @@ dd > span {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.section-art {
-}
-
 .section-art-container {
   width: 800px;
   background-color: rgba(0, 0, 0, 0.1);
   padding: 10px;
   border-radius: 8px;
+}
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+}
+
+.instagram-grid-item {
+  max-width: 220px;
+  max-height: 220px;
+}
+
+.instagram-grid-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
