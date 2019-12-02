@@ -214,3 +214,12 @@ dd > span {
   height: 100%;
   width: 100%;
 }
+
+.blurb {
+  font-size: 24px;
+  max-width: 820px;
+}
+
+.mailto {
+  color: rgba(0, 0, 0, 0.5);
+}
